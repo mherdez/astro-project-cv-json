@@ -1,26 +1,20 @@
 ---
-const jsonList = await Astro.glob("@json/*.json");
-const data = jsonList.sort((a, b) => {
-  if (a.basics.name < b.basics.name) {
-    return -1;
-  }
-  if (a.basics.name > b.basics.name) {
-    return 1;
-  }
-  return 0;
-});
+import { $counter } from "@store/store";
+
+const data = $counter.value;
 ---
 
 <section class="flex flex-col gap-3 box-content m-auto">
   {
-    data.map((user) => (
-      <a
-        class="hover:text-black hover:bg-yellow-400 transition-all duration-[400ms] py-1 px-2 rounded-md"
-        href={`/user/${user.basics.email}`}
-        target="_blank"
-      >
-        {user.basics.name}
-      </a>
-    ))
+    data &&
+      data.map(({ basics }) => (
+        <a
+          class="hover:text-black hover:bg-yellow-400 transition-all duration-[400ms] py-1 px-2 rounded-md"
+          href={`/user/${basics.email}`}
+          target="_blank"
+        >
+          {basics.name}
+        </a>
+      ))
   }
 </section>

@@ -2,8 +2,10 @@
 import Layout from "@layouts/Layout.astro";
 
 const { email } = Astro.params;
-const jsonList = await Astro.glob("@json/*.json");
-const user = jsonList.find((json) => json.basics.email === email);
+import { $counter } from "@store/store";
+
+const data = $counter.value;
+const user = data?.find((json) => json.basics.email === email);
 const title = user ? user.basics.name : "User not found";
 ---
 
@@ -24,6 +26,11 @@ const title = user ? user.basics.name : "User not found";
           <p>{user.basics.location.city}</p>
           <p>{user.basics.phone}</p>
           <p>{user.basics.email}</p>
+          <p>
+            {user.basics.profiles.map(
+              (item) => `${item.network} @${item.username}`
+            )}
+          </p>
         </section>
       )
     }

@@ -1,0 +1,19 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const jsonList = await Astro.glob("@json/*.json");
+---
+
+<Layout title="CV List">
+  <main class="text-center">
+    <h1 class="text-yellow-500 text-2xl">CV List</h1>
+    <p class="text-yellow-500">CV List page content</p>
+    {
+      jsonList.map((user) => (
+        <h1>
+          <a href={`/cvs/${user.id}`}>{user.basics.name}</a>
+        </h1>
+      ))
+    }
+  </main>
+</Layout>

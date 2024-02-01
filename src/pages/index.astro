@@ -1,21 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
-
-const jsonList = await Astro.glob("@json/*.json");
+import ListUsers from "@components/ListUsers.astro";
 ---
 
 <Layout title="CV List">
-  <main class="text-center">
+  <main class="text-center flex flex-col gap-6 py-10">
     <h1 class="text-yellow-500 text-2xl">CV List</h1>
-    <p class="text-yellow-500">CV List page content</p>
-    {
-      jsonList.map((user) => (
-        <h1>
-          <a href={`/user/${user.basics.email}`} target="_blank">
-            {user.basics.name}
-          </a>
-        </h1>
-      ))
-    }
+    <ListUsers />
   </main>
 </Layout>

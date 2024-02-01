@@ -11,8 +11,15 @@ const title = user ? user.basics.name : "User not found";
   <main class="flex flex-col w-[800px] m-auto mt-16">
     {
       user && (
-        <section>
-          <h1 class="text-yellow-500 text-5xl">{user.basics.name}</h1>
+        <section class="flex flex-col gap-y-2">
+          <picture>
+            <img
+              class="rounded-full w-32 h-32"
+              src={`https://avatars.githubusercontent.com/u/e?email=${email}`}
+              alt=""
+            />
+          </picture>
+          <h1 class="text-yellow-500 text-5xl py-4">{user.basics.name}</h1>
           <p>{user.basics.label}</p>
           <p>{user.basics.location.city}</p>
           <p>{user.basics.phone}</p>

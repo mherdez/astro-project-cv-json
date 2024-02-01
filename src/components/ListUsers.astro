@@ -2,7 +2,7 @@
 import { $counter } from "@store/store";
 
 const jsonList = $counter.value;
-const data = jsonList?.sort((a, b) => {
+const data = jsonList!.sort((a, b) => {
   if (a.basics.name < b.basics.name) {
     return -1;
   }

@@ -1,9 +1,24 @@
 ---
-const { email } = Astro.params;
+import Layout from "@layouts/Layout.astro";
 
+const { email } = Astro.params;
 const jsonList = await Astro.glob("@json/*.json");
-console.log(jsonList);
 const user = jsonList.find((json) => json.basics.email === email);
+const title = user ? user.basics.name : "User not found";
 ---
 
-{user && <h1>{user.basics.name}</h1>}
+<Layout title={title}>
+  <main class="flex flex-col w-[800px] m-auto mt-16">
+    {
+      user && (
+        <section>
+          <h1 class="text-yellow-500 text-5xl">{user.basics.name}</h1>
+          <p>{user.basics.label}</p>
+          <p>{user.basics.location.city}</p>
+          <p>{user.basics.phone}</p>
+          <p>{user.basics.email}</p>
+        </section>
+      )
+    }
+  </main>
+</Layout>

@@ -11,7 +11,7 @@ const jsonList = await Astro.glob("@json/*.json");
     {
       jsonList.map((user) => (
         <h1>
-          <a href={`/user/${user.id}`} target="_blank">
+          <a href={`/user/${user.basics.email}`} target="_blank">
             {user.basics.name}
           </a>
         </h1>

@@ -1,9 +1,9 @@
 ---
-const { id } = Astro.params;
+const { email } = Astro.params;
 
 const jsonList = await Astro.glob("@json/*.json");
 console.log(jsonList);
-const user = jsonList.find((json) => json.id === id);
+const user = jsonList.find((json) => json.basics.email === email);
 ---
 
 {user && <h1>{user.basics.name}</h1>}

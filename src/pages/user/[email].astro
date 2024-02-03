@@ -8,18 +8,22 @@ import Hero from "@components/sections/Hero.astro";
 import Projects from "@components/sections/Projects.astro";
 import Skills from "@components/sections/Skills.astro";
 
+import { $listUsers, $userSelected } from "@store/store";
 const { email } = Astro.params;
-import { $counter } from "@store/store";
 
-const data = $counter.value;
+let title = "User not found";
+const data = $listUsers.value;
 const user = data?.find((json) => json.basics.email === email);
-const title = user ? user.basics.name : "User not found";
+if (user) {
+  $userSelected.set(user);
+  title = user.basics.name;
+}
 ---
 
 <Layout title={title}>
   {
     user && (
-      <main class="flex flex-col w-[800px] m-auto mt-16 border-yellow-500 border-2 p-10">
+      <main class="flex flex-col w-[800px] m-auto mt-8 p-10 gap-10">
         <Hero />
         <About />
         <Experience />

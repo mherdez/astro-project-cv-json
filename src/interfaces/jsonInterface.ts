@@ -114,7 +114,8 @@ export interface Reference {
 }
 
 export interface Project {
-  name: string
+  name: string,
+  isActive?: boolean
   startDate: string
   endDate: string
   description: string

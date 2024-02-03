@@ -1,7 +1,7 @@
 ---
-import { $counter } from "@store/store";
+import { $listUsers } from "@store/store";
 
-const jsonList = $counter.value;
+const jsonList = $listUsers.value;
 const data = jsonList!.sort((a, b) => {
   if (a.basics.name < b.basics.name) {
     return -1;

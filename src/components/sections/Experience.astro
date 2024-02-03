@@ -1,5 +1,35 @@
 ---
+import Section from "@components/Section.astro";
+import { $userSelected } from "@store/store";
 
+const { work } = $userSelected.value!;
 ---
 
-<h1>Experience</h1>
+<Section title="Experiencia">
+  <ul class="flex flex-col gap-y-10">
+    {
+      work.map(({ name, position, url, startDate, endDate, summary }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-baseline">
+                <div>
+                  <h3 class="text-xl font-semibold">{name}</h3>
+                  <p>{position}</p>
+                </div>
+                <p class="text-sm opacity-60">{years}</p>
+              </header>
+              <footer>
+                <p class="opacity-60 text-[.9rem]">{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

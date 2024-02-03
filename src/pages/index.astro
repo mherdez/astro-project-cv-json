@@ -1,9 +1,9 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import { $counter } from "@store/store";
+import { $listUsers } from "@store/store";
 import ListUsers from "@components/ListUsers.astro";
 
-$counter.set(await Astro.glob("@json/*.json"));
+$listUsers.set(await Astro.glob("@json/*.json"));
 ---
 
 <Layout title="CV List">

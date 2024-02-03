@@ -1,5 +1,24 @@
 ---
+import { $userSelected } from "@store/store";
+import Section from "@components/Section.astro";
+import WorldIcon from "@icons/WorldIcon.astro";
 
+const { basics } = $userSelected.value!;
+const { name, label, email, phone, image, location, profiles, url } = basics;
 ---
 
-<h1>Hero</h1>
+<Section>
+  <div class="flex justify-between items-start">
+    <header>
+      <h2 class="text-3xl font-bold">{name}</h2>
+      <h3>{label}</h3>
+      <span class="opacity-70 text-[.85rem] flex items-center gap-1 mt-1">
+        <WorldIcon />
+        {location.city}, {location.region}, {location.countryCode}
+      </span>
+    </header>
+    <figure>
+      <img class="max-w-32 rounded-xl" src={image} alt={name} />
+    </figure>
+  </div>
+</Section>

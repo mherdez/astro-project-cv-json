@@ -1,5 +1,22 @@
 ---
+import Section from "@components/Section.astro";
+import { $userSelected } from "@store/store";
 
+const { skills } = $userSelected.value!;
 ---
 
-<h1>Skills</h1>
+<Section title="Habilidades">
+  <ul class="flex flex-wrap gap-2">
+    {
+      skills.map(({ name, level }) => {
+        return (
+          <li>
+            <span class="text-xs py-1 px-3 bg-gray-700 max-w-max rounded border border-gray-700/20">
+              {name}
+            </span>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

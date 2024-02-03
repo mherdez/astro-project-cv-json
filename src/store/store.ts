@@ -1,4 +1,5 @@
-import { atom } from 'nanostores'
-import { emptyJson } from '@interfaces/emptyJson'
+import { atom, type WritableAtom } from 'nanostores'
+import { EmptyJsonUser } from '@interfaces/emptyJson'
 
-export const $counter = atom([...emptyJson])
+export const $listUsers = atom([EmptyJsonUser])
+export const $userSelected = atom(EmptyJsonUser)

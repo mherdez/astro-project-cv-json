@@ -1,4 +1,4 @@
-export const emptyJson = [{
+export const EmptyJsonUser = {
   basics: {
     name: '',
     label: '',
@@ -86,10 +86,11 @@ export const emptyJson = [{
   }],
   projects: [{
     name: '',
+    isActive: true,
     startDate: '',
     endDate: '',
     description: '',
     highlights: [],
     url: ''
   }]
-}]
+}

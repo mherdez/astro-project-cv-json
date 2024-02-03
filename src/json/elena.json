@@ -1,0 +1,178 @@
+{
+  "basics": {
+    "name": "Elena Torres",
+    "label": "Experta en Tecnología Educativa",
+    "image": "https://avatars.githubusercontent.com/u/e?email=herdez@gmail.com",
+    "email": "herdez@gmail.com",
+    "phone": "(555) 234-5678",
+    "url": "https://elenatorresedutech.com",
+    "summary": "Especialista en tecnología educativa con más de 15 años de experiencia en la integración de TIC en entornos educativos. Doctora en Educación Tecnológica con múltiples publicaciones y proyectos innovadores en su haber.",
+    "location": {
+      "address": "Av. del Conocimiento 456",
+      "postalCode": "50001",
+      "city": "Zaragoza",
+      "countryCode": "ES",
+      "region": "Aragón"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "elenatorres",
+        "url": "https://www.linkedin.com/in/elenatorres"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Universidad Internacional de Tecnología Educativa",
+      "position": "Profesora y Coordinadora de Innovación Educativa",
+      "url": "https://universidadtecnologia.edu",
+      "startDate": "2010-02-01",
+      "endDate": null,
+      "summary": "Dirige el departamento de innovación educativa, desarrollando programas de estudio y proyectos de investigación aplicada. Supervisa la integración de tecnologías avanzadas en el currículo.",
+      "highlights": [
+        "Desarrollo de un máster en Innovación Educativa reconocido internacionalmente.",
+        "Liderazgo en proyectos de investigación financiados por la UE sobre gamificación en el aprendizaje."
+      ]
+    },
+    {
+      "name": "Colegio de Tecnología Avanzada",
+      "position": "Directora de Tecnología Educativa",
+      "url": "https://colegiotecnologia.edu",
+      "startDate": "2005-09-01",
+      "endDate": "2010-01-31",
+      "summary": "Estableció el marco para la integración de tecnología en el aula, incluyendo infraestructura, capacitación docente y evaluación de herramientas educativas.",
+      "highlights": [
+        "Implementación de un sistema de gestión de aprendizaje que aumentó el rendimiento estudiantil en un 30%.",
+        "Creación de un programa de capacitación docente en TIC."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto de Tecnología de Massachusetts (MIT)",
+      "url": "https://mit.edu",
+      "area": "Educación Tecnológica",
+      "studyType": "Doctorado",
+      "startDate": "2001-08-01",
+      "endDate": "2005-07-01",
+      "score": "Summa Cum Laude",
+      "courses": [
+        "DTE501 - Innovación y Tecnología en Educación",
+        "DTE502 - Diseño Curricular Asistido por Tecnología",
+        "DTE503 - Métodos de Investigación en Educación Tecnológica"
+      ]
+    },
+    {
+      "institution": "Instituto de Tecnología de Massachusetts (MIT)",
+      "url": "https://mit.edu",
+      "area": "Educación Tecnológica",
+      "studyType": "Doctorado",
+      "startDate": "2001-08-01",
+      "endDate": "2005-07-01",
+      "score": "Summa Cum Laude",
+      "courses": [
+        "DTE501 - Innovación y Tecnología en Educación",
+        "DTE502 - Diseño Curricular Asistido por Tecnología",
+        "DTE503 - Métodos de Investigación en Educación Tecnológica"
+      ]
+    },
+    {
+      "institution": "Universidad de Stanford",
+      "url": "https://stanford.edu",
+      "area": "Psicología Educativa",
+      "studyType": "Maestría",
+      "startDate": "1998-09-01",
+      "endDate": "2001-06-01",
+      "score": "Magna Cum Laude",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Tecnología Educativa",
+      "level": "Experto",
+      "keywords": [
+        "Integración de TIC",
+        "Diseño Curricular",
+        "Gamificación",
+        "Realidad Aumentada en Educación",
+        "M-Learning",
+        "E-Learning"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Fluido"
+    },
+    {
+      "language": "Francés",
+      "fluency": "Intermedio"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Plataforma de Aprendizaje Gamificado",
+      "description": "Diseñó y desarrolló una plataforma de aprendizío para la educación secundaria que utiliza mecánicas de juego para mejorar el aprendizaje en matemáticas y ciencias. Incluyó elementos de realidad aumentada para experimentos virtuales.",
+      "startDate": "2016-03-01",
+      "endDate": "2018-05-01",
+      "highlights": [
+        "Aumentó la participación estudiantil en un 70% en los colegios participantes.",
+        "Premio a la Innovación Educativa 2017 por la Sociedad de Tecnología Educativa."
+      ],
+      "url": "https://elenatorresedutech.com/proyectos/gamificacion"
+    },
+    {
+      "name": "Curso Online de Realidad Aumentada en Educación",
+      "description": "Creación de un curso online masivo y abierto (MOOC) sobre el uso de realidad aumentada en entornos educativos, desde la teoría hasta la práctica.",
+      "startDate": "2019-01-01",
+      "endDate": "2019-12-31",
+      "highlights": [
+        "Más de 10,000 inscritos en el primer año.",
+        "Colaboración con universidades internacionales para la creación de contenido."
+      ],
+      "url": "https://elenatorresedutech.com/cursos/ra-educacion"
+    },
+    {
+      "name": "Curso Online de Realidad Aumentada en Educación",
+      "description": "Creación de un curso online masivo y abierto (MOOC) sobre el uso de realidad aumentada en entornos educativos, desde la teoría hasta la práctica.",
+      "startDate": "2019-01-01",
+      "endDate": "2019-12-31",
+      "highlights": [
+        "Más de 10,000 inscritos en el primer año.",
+        "Colaboración con universidades internacionales para la creación de contenido."
+      ],
+      "url": "https://elenatorresedutech.com/cursos/ra-educacion"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Innovación Educativa",
+      "keywords": [
+        "Aprendizaje Móvil",
+        "Tecnologías Emergentes",
+        "Educación Inclusiva"
+      ]
+    },
+    {
+      "name": "Desarrollo Profesional Docente",
+      "keywords": [
+        "Capacitación en TIC",
+        "Metodologías Activas",
+        "Evaluación Formativa"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Juan Martínez",
+      "reference": "Director del Departamento de Educación Tecnológica en Universidad Internacional de Tecnología Educativa. 'Elena es una líder en el campo de la tecnología educativa, con una impresionante capacidad para innovar y transformar la enseñanza y el aprendizaje.'"
+    }
+  ]
+}

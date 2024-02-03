@@ -1,6 +1,13 @@
 ---
 import Layout from "@layouts/Layout.astro";
 
+import About from "@components/sections/About.astro";
+import Education from "@components/sections/Education.astro";
+import Experience from "@components/sections/Experience.astro";
+import Hero from "@components/sections/Hero.astro";
+import Projects from "@components/sections/Projects.astro";
+import Skills from "@components/sections/Skills.astro";
+
 const { email } = Astro.params;
 import { $counter } from "@store/store";
 
@@ -10,29 +17,16 @@ const title = user ? user.basics.name : "User not found";
 ---
 
 <Layout title={title}>
-  <main class="flex flex-col w-[800px] m-auto mt-16">
-    {
-      user && (
-        <section class="flex flex-col gap-y-2">
-          <picture>
-            <img
-              class="rounded-full w-32 h-32"
-              src={`https://avatars.githubusercontent.com/u/e?email=${email}`}
-              alt=""
-            />
-          </picture>
-          <h1 class="text-yellow-500 text-5xl py-4">{user.basics.name}</h1>
-          <p>{user.basics.label}</p>
-          <p>{user.basics.location.city}</p>
-          <p>{user.basics.phone}</p>
-          <p>{user.basics.email}</p>
-          <p>
-            {user.basics.profiles.map(
-              (item) => `${item.network} @${item.username}`
-            )}
-          </p>
-        </section>
-      )
-    }
-  </main>
+  {
+    user && (
+      <main class="flex flex-col w-[800px] m-auto mt-16 border-yellow-500 border-2 p-10">
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Projects />
+        <Skills />
+      </main>
+    )
+  }
 </Layout>

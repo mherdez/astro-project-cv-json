@@ -1,0 +1,198 @@
+{
+  "basics": {
+    "name": "Luis Hernández",
+    "label": "Estudiante de Ingeniería en Sistemas",
+    "image": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "luis.hernandez@estudiante.utcam.edu.mx",
+    "phone": "(981) 123-4567",
+    "summary": "Estudiante de tercer año en Ingeniería en Sistemas en la Universidad Tecnológica de Campeche. Apasionado por el desarrollo de software y la resolución de problemas mediante la programación. Buscando oportunidades para aplicar conocimientos teóricos en entornos prácticos y contribuir a proyectos reales.",
+    "location": {
+      "city": "Campeche",
+      "countryCode": "MX",
+      "region": "Campeche"
+    }
+  },
+  "education": [
+    {
+      "institution": "Universidad Tecnológica de Campeche",
+      "area": "Ingeniería en Sistemas",
+      "studyType": "Título Universitario",
+      "startDate": "2021-08-01",
+      "endDate": "Expected 2025-07",
+      "courses": [
+        "Programación Avanzada",
+        "Desarrollo de Aplicaciones Web",
+        "Sistemas Operativos",
+        "Bases de Datos"
+      ]
+    },
+    {
+      "institution": "Universidad Tecnológica de Campeche",
+      "area": "Técnico en Informática",
+      "studyType": "Técnico Universitario",
+      "startDate": "2018-08-01",
+      "endDate": "2021-07-31",
+      "courses": [
+        "Programación Básica",
+        "Diseño de Interfaces",
+        "Redes de Computadoras",
+        "Sistemas de Información"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Universidad Tecnológica de Campeche",
+      "position": "Asistente de Laboratorio",
+      "startDate": "2024-01-01",
+      "endDate": "2024-05-31",
+      "summary": "Apoyo en la administración y mantenimiento de equipos de cómputo y software en el laboratorio de sistemas. Asistencia a estudiantes en la realización de prácticas y proyectos.",
+      "highlights": [
+        "Mantenimiento de equipos de cómputo y software.",
+        "Asistencia a estudiantes en la realización de prácticas y proyectos.",
+        "Colaboración en la organización de actividades académicas."
+      ]
+    },
+    {
+      "company": "Universidad Tecnológica de Campeche",
+      "position": "Asistente de Docencia",
+      "startDate": "2023-08-01",
+      "endDate": "2023-12-31",
+      "summary": "Apoyo en la impartición de clases y actividades de laboratorio en cursos de programación y bases de datos. Asistencia en la evaluación de proyectos y tareas.",
+      "highlights": [
+        "Apoyo en la preparación de materiales didácticos.",
+        "Asistencia en la evaluación de proyectos y tareas.",
+        "Colaboración en la organización de actividades académicas."
+      ]
+    },
+    {
+      "company": "Universidad Tecnológica de Campeche",
+      "position": "Asistente de Investigación",
+      "startDate": "2022-09-01",
+      "endDate": "2023-05-31",
+      "summary": "Colaboración en proyectos de investigación en el área de sistemas de información. Participación en el desarrollo de aplicaciones web y análisis de datos.",
+      "highlights": [
+        "Desarrollo de aplicaciones web para la gestión de datos.",
+        "Análisis de datos y generación de reportes.",
+        "Colaboración en equipo para definir objetivos y metodologías."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Gestión de Biblioteca",
+      "description": "Sistema que permitió la gestión de libros, usuarios y préstamos de manera eficiente.",
+      "highlights": [
+        "Base de datos.",
+        "Interfaz de usuario."
+      ],
+      "languages": ["Java", "MySQL"],
+      "startDate": "2023-02-01",
+      "endDate": "2023-04-30"
+    },
+    {
+      "name": "Gestión de Eventos Universitarios",
+      "description": "Creación de una aplicación web para facilitar la organización y participación en eventos universitarios.",
+      "highlights": [
+        "Desarrollo del frontend.",
+        "Servidor backend con Node.js.",
+        "Colaboración en equipo."
+      ],
+      "languages": ["HTML", "CSS", "JavaScript", "Node.js"],
+      "startDate": "2023-09-01",
+      "endDate": "2023-11-30"
+    },
+    {
+      "name": "Análisis de Datos",
+      "description": "Proyecto de investigación para el análisis de datos de redes sociales.",
+      "highlights": [
+        "Extracción y procesamiento de datos.",
+        "Análisis de datos.",
+        "Colaboración en equipo."
+      ],
+      "languages": ["Python"],
+      "startDate": "2024-02-01",
+      "endDate": "2024-05-31"
+    },
+    {
+      "name": "Gestión de Tareas",
+      "description": "Aplicación móvil para la gestión de tareas y recordatorios.",
+      "highlights": [
+        "Base de datos.",
+        "UX/UI.",
+        "Pruebas unitarias."
+      ],
+      "languages": ["Java", "Android"],
+      "startDate": "2024-09-01",
+      "endDate": "2024-11-30"
+    },
+    {
+      "name": "Sitio Web Personal",
+      "description": "Sitio web personal para la presentación de proyectos, habilidades y experiencia. ",
+      "highlights": [
+        "Sitio web.",
+        "UX/UI.",
+        "Dispositivos móviles."
+      ],
+      "languages": ["HTML", "CSS", "JavaScript"],
+      "startDate": "2024-12-01",
+      "endDate": "2025-01-31"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programación",
+      "level": "Intermedio",
+      "keywords": ["Java", "HTML", "CSS", "JavaScript", "Node.js", "MySQL"]
+    },
+    {
+      "name": "Desarrollo Web",
+      "level": "Intermedio",
+      "keywords": ["HTML", "CSS", "JavaScript", "Node.js", "React", "Bootstrap"]
+    },
+    {
+      "name": "Bases de Datos",
+      "level": "Intermedio",
+      "keywords": ["MySQL", "MongoDB", "SQL Server", "Firebase"]
+    },
+    {
+      "name": "Análisis de Datos",
+      "level": "Básico",
+      "keywords": ["Python", "Pandas", "Numpy", "Matplotlib", "Seaborn"]
+    },
+    {
+      "name": "Desarrollo Móvil",
+      "level": "Básico",
+      "keywords": ["Java", "Android", "Kotlin", "Firebase"]
+    },
+    {
+      "name": "Inglés",
+      "level": "Básico",
+      "keywords": ["Comprensión", "Lectura", "Escritura"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Básico"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Desarrollo de Software",
+      "keywords": ["Programación", "Desarrollo Web", "Innovación Tecnológica"]
+    },
+    {
+      "name": "Investigación",
+      "keywords": ["Análisis de Datos", "Redes Sociales", "Tecnologías Emergentes"]
+    },
+    {
+      "name": "Docencia",
+      "keywords": ["Enseñanza", "Tecnologías de la Información", "Aprendizaje Colaborativo"]
+    }
+  ]
+}

@@ -18,7 +18,17 @@ const { name, label, email, phone, image, location, profiles, url } = basics;
       </span>
     </header>
     <figure>
-      <img class="max-w-32 rounded-xl" src={image} alt={name} />
+      {
+        !image ? (
+          <img
+            class="max-w-32 rounded-xl"
+            src={`https://avatars.githubusercontent.com/u/e?email=${email}`}
+            alt={name}
+          />
+        ) : (
+          <img class="max-w-32 rounded-xl" src={image} alt={name} />
+        )
+      }
     </figure>
   </div>
 </Section>

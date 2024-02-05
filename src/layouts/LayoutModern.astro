@@ -26,7 +26,7 @@ const { title } = Astro.props;
     --bgSlider: #ecf4ff;
     --bgMain: #fff;
     --title: #213d62;
-    --text: #1f1f1f;
+    --text: #2d2d2d;
     --backgound: #e8e9ee;
   }
   html {
@@ -47,11 +47,11 @@ const { title } = Astro.props;
   }
 
   @media print {
-    body {
-      /* background: #fff !important; */
-      /* color: #000 !important;
+    :root {
+      background: #fff !important;
       margin-block: -50px !important;
-      padding-block: 0 !important; */
+      padding-block: 0 !important;
+      --text: #000;
     }
   }
 </style>

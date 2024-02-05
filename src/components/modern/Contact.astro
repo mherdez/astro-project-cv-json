@@ -1,0 +1,43 @@
+---
+import { $userSelected } from "@store/store";
+import TitleSection from "@components/modern/TitleSection.astro";
+import PhoneIcon from "@icons/PhoneIcon.astro";
+import EmailIcon from "@icons/EmailIcon.astro";
+import WorldIcon from "@icons/WorldIcon.astro";
+const { basics } = $userSelected.value!;
+const { email, phone, url } = basics;
+---
+
+<article class="text-sm flex flex-col gap-2 mb-8 text-[var(--text)]">
+  <TitleSection title="contacto" />
+  {
+    phone && (
+      <div class="flex items-center gap-3">
+        <span class="text-white w-7 h-7 p-[.36rem] bg-[var(--title)] rounded-full flex justify-center items-center">
+          <PhoneIcon />
+        </span>
+        <p>{phone}</p>
+      </div>
+    )
+  }
+  {
+    email && (
+      <div class="flex items-center gap-3">
+        <span class="text-white w-7 h-7 p-[.36rem] bg-[var(--title)] rounded-full flex justify-center items-center">
+          <EmailIcon />
+        </span>
+        <p>{email}</p>
+      </div>
+    )
+  }
+  {
+    url && (
+      <div class="flex items-center gap-3">
+        <span class="text-white w-7 h-7 p-[.36rem] bg-[var(--title)] rounded-full flex justify-center items-center">
+          <WorldIcon />
+        </span>
+        <p>{url}</p>
+      </div>
+    )
+  }
+</article>

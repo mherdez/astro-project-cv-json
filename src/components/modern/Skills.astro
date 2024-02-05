@@ -1,22 +1,22 @@
 ---
-import Section from "@components/Section.astro";
 import { $userSelected } from "@store/store";
+import TitleSection from "@components/modern/TitleSection.astro";
 
 const { skills } = $userSelected.value!;
 ---
 
-<Section title="Habilidades">
-  <ul class="flex flex-wrap gap-2">
-    {
-      skills.map(({ name, level }) => {
-        return (
-          <li>
-            <span class="text-xs py-1 px-3 bg-gray-700 max-w-max rounded border border-gray-700/20">
-              {name}
-            </span>
+<article class="text-sm flex flex-col gap-2 mb-8 text-[var(--text)]">
+  <TitleSection title="habilidades" />
+  <div class="flex items-center gap-3">
+    <ul>
+      {
+        skills.map(({ name }) => (
+          <li class="flex items-center gap-2">
+            <span class="text-2xl">&bullet;</span>
+            {name}
           </li>
-        );
-      })
-    }
-  </ul>
-</Section>
+        ))
+      }
+    </ul>
+  </div>
+</article>

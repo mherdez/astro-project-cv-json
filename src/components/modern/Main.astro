@@ -1,0 +1,29 @@
+---
+import TitleSection from "@components/modern/TitleSection.astro";
+
+import { $userSelected } from "@store/store";
+const { basics, work } = $userSelected.value!;
+const { summary } = basics;
+---
+
+<section class="flex flex-col gap-8">
+  <article>
+    <TitleSection title="Acerca de mí" />
+    <div class="text-xs">
+      <p class="leading-6 text-[var(--text)]">{summary}</p>
+    </div>
+  </article>
+  <article>
+    <TitleSection title="experiencia laboral" />
+    <div class="text-xs">
+      {
+        work.map((item) => (
+          <div>
+            <p>{item.startDate}</p>
+            <p>{item.endDate}</p>
+          </div>
+        ))
+      }
+    </div>
+  </article>
+</section>

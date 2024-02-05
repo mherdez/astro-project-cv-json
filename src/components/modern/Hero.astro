@@ -1,0 +1,31 @@
+---
+import { $userSelected } from "@store/store";
+import Section from "@components/Section.astro";
+
+const { basics } = $userSelected.value!;
+const { name, label, image } = basics;
+---
+
+<Section>
+  <header class="flex bg-[var(--bgHeader)] justify-center py-8 px-14">
+    <figure class="w-[45%] flex justify-center items-center relative">
+      <img
+        class="w-52 rounded-full absolute top-0 -left-1 border-8 border-[var(--bgHeader)]"
+        src={image}
+        alt={name}
+      />
+    </figure>
+    <div class="w-[55%] flex flex-col gap-6">
+      <h2
+        class="text-5xl font-bold w-[50%] leading-[3.5rem] text-[var(--title)]"
+      >
+        {name}
+      </h2>
+      <h3
+        class="uppercase text-sm font-bold tracking-widest text-[var(--title)]"
+      >
+        {label}
+      </h3>
+    </div>
+  </header>
+</Section>

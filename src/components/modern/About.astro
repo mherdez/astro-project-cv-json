@@ -1,0 +1,11 @@
+---
+import Section from "@components/Section.astro";
+import { $userSelected } from "@store/store";
+
+const { basics } = $userSelected.value!;
+const { summary } = basics;
+---
+
+<Section title="Sobre mí">
+  <p class="opacity-60 text-[.9rem]">{summary}</p>
+</Section>

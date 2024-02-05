@@ -1,14 +1,14 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import LayoutModern from "@layouts/Layout.astro";
 import { $listUsers } from "@store/store";
 import ListUsers from "@components/ListUsers.astro";
 
 $listUsers.set(await Astro.glob("@json/*.json"));
 ---
 
-<Layout title="CV List">
+<LayoutModern title="CV List">
   <main class="text-center flex flex-col gap-6 py-10">
     <h1 class="text-yellow-500 text-2xl">CV List</h1>
     <ListUsers />
   </main>
-</Layout>
+</LayoutModern>

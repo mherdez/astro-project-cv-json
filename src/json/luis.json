@@ -1,9 +1,9 @@
 {
   "basics": {
     "name": "Luis Hernández",
-    "label": "Estudiante de Ingeniería en Sistemas",
+    "label": "Ingeniería en Sistemas",
     "image": "https://randomuser.me/api/portraits/men/51.jpg",
-    "email": "luis.hernandez@estudiante.utcam.edu.mx",
+    "email": "luis.hernandez@utcam.edu.mx",
     "phone": "(981) 123-4567",
     "summary": "Estudiante de tercer año en Ingeniería en Sistemas en la Universidad Tecnológica de Campeche. Apasionado por el desarrollo de software y la resolución de problemas mediante la programación. Buscando oportunidades para aplicar conocimientos teóricos en entornos prácticos y contribuir a proyectos reales.",
     "location": {

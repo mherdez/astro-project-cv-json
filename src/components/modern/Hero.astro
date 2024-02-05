@@ -7,18 +7,18 @@ const { name, label, image } = basics;
 ---
 
 <Section>
-  <header class="flex bg-[var(--bgHeader)] justify-center py-8 px-14">
-    <figure class="w-[45%] flex justify-center items-center relative">
+  <header
+    class="flex bg-[var(--bgHeader)] px-14 min-h-56 items-center justify-end relative"
+  >
+    <figure class="w-[45%] absolute -bottom-6 left-10">
       <img
-        class="w-52 rounded-full absolute top-0 -left-1 border-8 border-[var(--bgHeader)]"
+        class="w-52 rounded-full border-8 border-[var(--bgHeader)]"
         src={image}
         alt={name}
       />
     </figure>
     <div class="w-[55%] flex flex-col gap-6">
-      <h2
-        class="text-5xl font-bold w-[50%] leading-[3.5rem] text-[var(--title)]"
-      >
+      <h2 class="text-5xl font-bold leading-[3.5rem] text-[var(--title)]">
         {name}
       </h2>
       <h3

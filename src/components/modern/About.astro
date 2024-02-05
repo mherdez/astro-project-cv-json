@@ -1,11 +1,12 @@
 ---
-import Section from "@components/Section.astro";
 import { $userSelected } from "@store/store";
+import TitleSection from "./TitleSection.astro";
 
 const { basics } = $userSelected.value!;
 const { summary } = basics;
 ---
 
-<Section title="Sobre mí">
+<article>
+  <TitleSection title="sobre mí" />
   <p class="text-sm leading-6">{summary}</p>
-</Section>
+</article>

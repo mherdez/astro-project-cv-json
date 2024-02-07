@@ -42,7 +42,7 @@
   ],
   "work": [
     {
-      "company": "Universidad Tecnológica de Campeche",
+      "name": "Universidad Tecnológica de Campeche",
       "position": "Asistente de Laboratorio",
       "startDate": "2024-01-01",
       "endDate": "2024-05-31",
@@ -54,7 +54,7 @@
       ]
     },
     {
-      "company": "Universidad Tecnológica de Campeche",
+      "name": "Universidad Tecnológica de Campeche",
       "position": "Asistente de Docencia",
       "startDate": "2023-08-01",
       "endDate": "2023-12-31",
@@ -66,7 +66,7 @@
       ]
     },
     {
-      "company": "Universidad Tecnológica de Campeche",
+      "name": "Universidad Tecnológica de Campeche",
       "position": "Asistente de Investigación",
       "startDate": "2022-09-01",
       "endDate": "2023-05-31",

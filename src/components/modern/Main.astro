@@ -1,15 +1,9 @@
 ---
-import TitleSection from "@components/modern/TitleSection.astro";
-
 import About from "@components/modern/About.astro";
 import Experience from "@components/modern/Experience.astro";
-
-import { $userSelected } from "@store/store";
-const { basics } = $userSelected.value!;
-const { summary } = basics;
 ---
 
-<section class="flex flex-col gap-8">
+<section class="flex flex-col gap-10">
   <About />
   <Experience />
 </section>

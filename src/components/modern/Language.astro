@@ -2,18 +2,20 @@
 import { $userSelected } from "@store/store";
 import TitleSection from "@components/modern/TitleSection.astro";
 
-const { skills } = $userSelected.value!;
+const { languages } = $userSelected.value!;
 ---
 
 <article class="text-sm flex flex-col gap-2 text-[var(--text)]">
-  <TitleSection title="habilidades" />
+  <TitleSection title="Idiomas" />
   <div class="flex items-center gap-3">
     <ul>
       {
-        skills.map(({ name }) => (
+        languages.map(({ language, fluency }) => (
           <li class="flex items-center gap-2">
             <span class="text-2xl">&bullet;</span>
-            {name}
+            <p>
+              <span class="font-semibold">{language}</span> - {fluency}
+            </p>
           </li>
         ))
       }

@@ -1,0 +1,33 @@
+---
+import { $userSelected } from "@store/store";
+import TitleSection from "@components/creative/TitleSection.astro";
+
+interface Props {
+  position: "left" | "right";
+}
+const { position = "left" } = Astro.props;
+
+const { work } = $userSelected.value!;
+---
+
+<article class="flex flex-col gap-2 mb-8 text-[var(--text)]">
+  <TitleSection title="Experiencia" position={position} />
+  <ul class="flex flex-col gap-5">
+    {
+      work.map(({ name, position, startDate, endDate, summary }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear = new Date(endDate).getFullYear();
+        return (
+          <li class="flex flex-col gap-1">
+            <p class="font-semibold text-sm text-[var(--title)]">{name}</p>
+            <p class="text-xs">{position}</p>
+            <p class="text-xs">
+              {startYear}-{endYear}
+            </p>
+            <p class="text-xs opacity-70 leading-5">{summary}</p>
+          </li>
+        );
+      })
+    }
+  </ul>
+</article>

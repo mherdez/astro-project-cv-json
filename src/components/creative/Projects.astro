@@ -1,0 +1,52 @@
+---
+import Section from "@components/Section.astro";
+import { $userSelected } from "@store/store";
+
+const { projects } = $userSelected.value!;
+---
+
+<Section title="Proyectos">
+  <ul class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4">
+    {
+      projects.map(({ name, isActive, description, highlights, url }) => {
+        return (
+          <li>
+            <article class="flex flex-col justify-between gap-4 h-full border border-slate-400/60 p-2">
+              <header>
+                {url ? (
+                  <a href={url} target="_blank">
+                    <h2 class="text-lg font-semibold hover:text-gray-700/60 hover:bg-gray-300">
+                      {name}
+                      {isActive && (
+                        <span class="text-green-500 print:text-gray-200">
+                          &bull;
+                        </span>
+                      )}
+                    </h2>
+                  </a>
+                ) : (
+                  <h2 class="text-lg font-semibold">
+                    {name}
+                    {isActive && (
+                      <span class="text-green-500 print:text-gray-200">
+                        &bull;
+                      </span>
+                    )}
+                  </h2>
+                )}
+                <p class="opacity-60 text-[.9rem]">{description}</p>
+              </header>
+              <footer class="flex flex-col gap-2">
+                {highlights.map((highlight) => (
+                  <span class="text-[.6rem] py-1 px-3 bg-gray-700 max-w-max rounded border border-gray-700/20">
+                    {highlight}
+                  </span>
+                ))}
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Section>

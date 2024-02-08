@@ -1,0 +1,17 @@
+---
+import { $userSelected } from "@store/store";
+import TitleSection from "@components/creative/TitleSection.astro";
+
+interface Props {
+  position: "left" | "right";
+}
+const { position } = Astro.props;
+
+const { basics } = $userSelected.value!;
+const { summary } = basics;
+---
+
+<article>
+  <TitleSection title="sobre mí" position={position} />
+  <p class="text-sm leading-6 mt-1 text-[var(--text)]">{summary}</p>
+</article>

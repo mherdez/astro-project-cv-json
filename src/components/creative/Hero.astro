@@ -1,0 +1,33 @@
+---
+import { $userSelected } from "@store/store";
+import Contact from "@components/creative/Contact.astro";
+
+const { basics } = $userSelected.value!;
+const { name, label, image } = basics;
+
+const firstName = name.split(" ").slice(0, -1).join(" ");
+const lastName = name.split(" ").slice(-1).join(" ");
+---
+
+<header
+  class="flex bg-[var(--bgHeader)] px-10 py-12 items-start justify-between relative"
+>
+  <div class="flex flex-col gap-8">
+    <section class="flex flex-col gap-2 font-bold">
+      <h3 class="text-4xl text-[var(--title)] uppercase">
+        {firstName}
+      </h3>
+      <h2 class="text-5xl text-[var(--text)] opacity-70 uppercase">
+        {lastName}
+      </h2>
+      <h3 class="text-sm tracking-widest text-[var(--title)] uppercase">
+        {label}
+      </h3>
+    </section>
+    <Contact />
+  </div>
+  <figure>
+    <img class="w-60" src={image} alt={name} />
+  </figure>
+  <div class="absolute bg-[var(--title)] w-10 h-44 right-0 top-20"></div>
+</header>

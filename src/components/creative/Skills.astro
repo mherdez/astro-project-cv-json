@@ -1,0 +1,25 @@
+---
+import { $userSelected } from "@store/store";
+import TitleSection from "@components/creative/TitleSection.astro";
+
+interface Props {
+  position: "left" | "right";
+}
+const { position } = Astro.props;
+
+const { skills } = $userSelected.value!;
+---
+
+<article class="text-sm flex flex-col gap-2 text-[var(--text)]">
+  <TitleSection title="habilidades" position={position} />
+  <div class="flex flex-col gap-2">
+    {
+      skills.map(({ name, level }) => (
+        <div class="flex gap-2 justify-between text-xs">
+          <p class="text-[var(--title)] font-bold">{name}</p>
+          <p class="text-[var(--text)] opacity-60">{level}</p>
+        </div>
+      ))
+    }
+  </div>
+</article>

@@ -1,0 +1,159 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  :root {
+    --title: #2cb4b4;
+    --text: #2d2d2d;
+    --textSection: #fff;
+    --backgound: #ccc;
+  }
+  html {
+    background: var(--backgound);
+    color: var(--text);
+    font-family: sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  .btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(137, 137, 137);
+    color: #000;
+  }
+  .red {
+    background-color: #fbe5e5;
+    color: #761414;
+    border: 1px solid #761414;
+  }
+  .blue {
+    background-color: #c9d6e8;
+    color: #213d62;
+    border: 1px solid #213d62;
+  }
+  .green {
+    background-color: #e6fbe5;
+    color: #104f0d;
+    border: 1px solid #104f0d;
+  }
+  .gray {
+    background-color: #d4d4d4;
+    color: #595959;
+    border: 1px solid #595959;
+  }
+  .yellow {
+    background-color: #fdfae2;
+    color: #776c08;
+    border: 1px solid #776c08;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: smaller;
+  }
+
+  @media print {
+    :root {
+      background: #fff !important;
+      margin-block: -50px !important;
+      padding-block: 0 !important;
+      --text: #000;
+    }
+    nav: {
+      display: none !important;
+    }
+    .btn {
+      display: none !important;
+    }
+  }
+</style>
+<!--
+<script>
+  console.log("Hello from Astro!");
+  // --bgHeader: #c9d6e8;
+  //   --bgSlider: #ecf4ff;
+  //   --bgMain: #fff;
+  //   --title: #213d62;
+  //   --text: #2d2d2d;
+  //   --backgound: #e8e9ee;
+  //   document.documentElement.style.setProperty('--your-variable', '#YOURCOLOR');
+  const nav = document.createElement("nav");
+
+  const btnBlue = document.createElement("button");
+  btnBlue.textContent = "Blue";
+  btnBlue.className = "btn blue";
+  btnBlue.onclick = () => {
+    document.documentElement.style.setProperty("--bgHeader", "#c9d6e8");
+    document.documentElement.style.setProperty("--bgSlider", "#ecf4ff");
+    document.documentElement.style.setProperty("--title", "#213d62");
+  };
+  const btnRed = document.createElement("button");
+  btnRed.textContent = "Red";
+  btnRed.className = "btn red";
+  btnRed.onclick = () => {
+    document.documentElement.style.setProperty("--bgHeader", "#EF9F9F");
+    document.documentElement.style.setProperty("--bgSlider", "#FBE5E5");
+    document.documentElement.style.setProperty("--title", "#761414");
+  };
+  const btnGreen = document.createElement("button");
+  btnGreen.textContent = "Green";
+  btnGreen.className = "btn green";
+  btnGreen.onclick = () => {
+    document.documentElement.style.setProperty("--bgHeader", "#A1E8AC");
+    document.documentElement.style.setProperty("--bgSlider", "#E6FBE5");
+    document.documentElement.style.setProperty("--title", "#104F0D");
+  };
+  const btnGray = document.createElement("button");
+  btnGray.textContent = "Gray";
+  btnGray.className = "btn gray";
+  btnGray.onclick = () => {
+    document.documentElement.style.setProperty("--bgHeader", "#D4D4D4");
+    document.documentElement.style.setProperty("--bgSlider", "#F5F5F5");
+    document.documentElement.style.setProperty("--title", "#595959");
+  };
+  const btnYellow = document.createElement("button");
+  btnYellow.textContent = "Yellow";
+  btnYellow.className = "btn yellow";
+  btnYellow.onclick = () => {
+    document.documentElement.style.setProperty("--bgHeader", "#F7ED92");
+    document.documentElement.style.setProperty("--bgSlider", "#FDFAE2");
+    document.documentElement.style.setProperty("--title", "#776C08");
+  };
+  nav.append(btnBlue, btnRed, btnGreen, btnYellow, btnGray);
+  document.body.before(nav);
+</script> -->

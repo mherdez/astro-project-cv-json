@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  position: "left" | "right";
+}
+
+const { title, position } = Astro.props;
+---
+
+<div class="relative pb-14">
+  {
+    position === "left" ? (
+      <h2 class="text-lg font-semibold text-[var(--textSection)] uppercase tracking-[.15rem] py-2 pl-10 pr-4 bg-[var(--title)] inline-block -left-10 absolute">
+        {title}
+      </h2>
+    ) : (
+      <div class="pb-10 py-1 pl-4 pr-10 bg-[var(--title)] -right-10 w-[18.5rem] absolute">
+        <h2 class="text-lg font-semibold text-[var(--textSection)] uppercase tracking-[.15rem] absolute top-2">
+          {title}
+        </h2>
+      </div>
+    )
+  }
+</div>
